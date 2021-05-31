@@ -24,6 +24,8 @@ $ npm install
 
 ## Running the app
 
+In app.module.ts use your database credentials.
+
 ```bash
 # development
 $ npm run start
