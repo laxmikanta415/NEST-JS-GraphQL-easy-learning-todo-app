@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type TodoType {
+  id: ID!
+  title: String!
+}
+
+type Query {
+  items: [TodoType!]!
+  item(id: Float!): TodoType!
+}
+
+type Mutation {
+  create(todo: TodoInput!): TodoType!
+  update(todo: TodoInput!, id: Float!): TodoType!
+  remove(id: Float!): TodoType!
+}
+
+input TodoInput {
+  title: String!
+}
